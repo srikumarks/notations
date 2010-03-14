@@ -23,6 +23,7 @@
 \setromanfont[Mapping=tex-text]{Times}
 \setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Gill Sans}
 \setmonofont[Scale=MatchLowercase]{Andale Mono}
+\def \deva#1{{\fontspec{DevanagariMT}#1}}
 
 \title{Var\d{n}am: ``karu\d nimpa''}
 \author{Tiruvotriy\=ur Ty\=agayyar}
@@ -42,11 +43,18 @@
 
 \begin{tabular}{ll}
 Pallavi: & \emph{karu\d nimpa idi manci taru\d namu s\=ami} \\
+& \deva{करुणिंप मँचि तरुणमु सामि}\\
 Anupallavi: & \emph{parula v\=e\d{d}al\=enu n\=a p\=ali \'sr\=\i{} v\=e\d{n}ug\=op\=ala d\=eva} \\
-Cara\d nam: & \emph{k\d rpa j\=u\d dumi \=\i{} v\=e\d{l}a}
+&  \deva{परुल वेडलेनु ना पालि श्री वेणुगोपाल देव}\\
+Cara\d nam: & \emph{k\d rpa j\=u\d dumi \=\i{} v\=e\d{l}a}\\
+&  \deva{कृप जूडुमि ई वेल}
 \end{tabular}
 
-\def \s#1{\makebox[0.275in][l]{#1}}
+\def \speed{0.276in}
+\def \f#1{\makebox[0.069in][l]{#1}}
+\def \t#1{\makebox[0.138in][l]{#1}}
+\def \s#1{\makebox[\speed][l]{#1}}
+
 \def \four#1{#1\s{}}
 \def \Four#1[#2]{#1#2}
 \def \Sl {\s{\d{S}}}
@@ -95,6 +103,7 @@ Cara\d nam: & \emph{k\d rpa j\=u\d dumi \=\i{} v\=e\d{l}a}
 \begin{tabular}{l}
 %\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}
 \P\p\m\p\s{}\G\p\G\p\s{}\R\p\G\R\s{}\S\p\p\p\lagu\\
+
 \textit{\s{ka}\s{}\s{ru}\s{}\s{}\s{\d nim}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{pa}\s{}\s{}\s{}\s{}} \\
 \\
 \Nl\S\R\G\s{}\R\s{S-}\Nl\S\dhru\Dl\Pl\ml\Dl\s{}\s{,}\Nl\S\R\lagu \\
