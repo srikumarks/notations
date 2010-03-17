@@ -19,14 +19,14 @@
 % and change "Hoefler Text" to any of these choices.
 
 \usepackage{fontspec,xltxtra,xunicode}
+\usepackage[pdftex,colorlinks=true,urlcolor=cyan]{hyperref}
 \defaultfontfeatures{Mapping=tex-text}
 \setromanfont[Mapping=tex-text]{Times}
 \setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Gill Sans}
 \setmonofont[Scale=MatchLowercase]{Andale Mono}
+\def \deva#1{{\fontspec{DevanagariMT}#1}}
+\def \tamil#1{{\fontspec{InaiMathi}#1}}
 
-\title{K\d rti : ``d\=ev\=\i br\=ova samayamid\=e''}
-\author{\'Sy\=am\=a \'S\=astri}
-%\date{}                                           % Activate to display a given date or no date
 
 \def \info#1#2#3#4{%
 	\begin{tabular}{ll}
@@ -80,12 +80,16 @@
 \def \Du {\s{\.D}}
 \def \nu {\s{\.n}}
 \def \Nu {\s{\.N}}
-%\def \p {\s{,}}
+\def \p {\s{,}}
 
 \def \lagu {\s{$||$}}
 \def \dhru {\s{$|$}}
 
 \def \kutti#1{\scriptsize #1}
+
+\title{K\d rti : ``d\=ev\=\i{} br\=ova samayamid\=e''}
+\author{\'Sy\=am\=a \'S\=astri}
+%\date{}                                           % Activate to display a given date or no date
 
 \begin{document}
 \maketitle
@@ -106,24 +110,44 @@ Pallavi: & \emph{d\=ev\=\i{} br\=ova samayamid\=e}\\
  & \emph{ati v\=egam\=e vacci}\\
  & \emph{n\=a vetalu d\=\i rcci karu\d ni\~ncav\=e} \\
  & \emph{\'sankari k\=am\=ak\d si}\\
+ & \\
+ & \deva{देवी ब्रोव समयमिदे} \\
+ & \deva{अति वेगमे वच्चि} \\
+ & \deva{ना वेतलु दीर्च्चि करुणिंचवे} \\
+ & \deva{शंकरि कामाक्षि} \\
+ & \\
  
-Cara\d nam 1: & \emph{l\=oka janani n\=apai dayal\=ed\=a n\=ed\=a su\d du g\=ad\=a} \\
+Cara\d nam 1: & \emph{l\=oka janani n\=apai daya l\=ed\=a n\=ed\=a su\d du g\=ad\=a} \\
  & \emph{\'sr\=\i{} k\=a\~nc\=\i{} vih\=ari\d n\=\i{} kaly\=a\d n\=\i{}} \\
  & \emph{\=ek\=ambr\=e\'svarunipriya bh\=amayaiyunna-}\\
  & \emph{n\=\i{}k\=emamm\=a ent\=o bh\=aram\=a vinum\=a n\=a talli} \\ 
  & \emph{(d\=ev\=\i)}\\
+ & \\
+ & \deva{लोक जननी नापै दय लेदा नेदा सुडु गादा} \\
+ & \deva{श्री काँची विहारिणी कल्याणी} \\
+ & \deva{एकाम्ब्रेश्वरुणिप्रिय भामयैयुन्न-} \\
+ & \deva{नीकेमम्मा एन्तो भारमा विनुमा ना तल्लि} \\
+ & \deva{(देवी)} \\
+ & \\
  
 Cara\d nam 2: & \emph{\'sy\=amak\d r\d s\d nuni s\=odari kaum\=ari bimb\=adari gauri} \\ 
  & \emph{h\=em\=a p\=ahi lalit\=e parad\=evat\=a} \\ 
  & \emph{k\=amak\d s\=\i{} ninuvin\=a bh\=umil\=o pr\=emat\=o} \\ 
  & \emph{k\=ap\=ad\=evar-evarunn\=aramm\=a nannu}\\
- & \emph{(d\=ev\=\i)} 
+ & \emph{(d\=ev\=\i)} \\
+ & \\
+ & \deva{श्यामकृष्णुनि सोदरि कौमारि बिंबादरि गौरि} \\
+ & \deva{हेमा पाहि ललिते परदेवता} \\
+ & \deva{कामाक्षी निनुविना भूमिलो प्रेमतो} \\
+ & \deva{कापादेवरेवरुन्नारम्मा नन्नु} \\
+ & \deva{(देवी)}
+ 
 \end{tabular}
  
 \section*{References}
 \begin{enumerate}
 \item Recorded performance by Shri K. V. Narayanaswamy (primary)
-\item {\scriptsize \verb|http://www.medieval.org/music/world/carnatic/lyrics/TKG/devi_brova_samayamide.html|}
+\item {\tt \scriptsize \verb|http://www.medieval.org/music/world/carnatic/lyrics/TKG/devi_brova_samayamide.html| (\href{http://www.medieval.org/music/world/carnatic/lyrics/TKG/devi_brova_samayamide.html}{go there})}
 \end{enumerate}
 
 \section*{Lyrics as given in ref 2}
