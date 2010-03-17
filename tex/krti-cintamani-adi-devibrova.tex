@@ -1,0 +1,157 @@
+% XeLaTeX can use any Mac OS X font. See the setromanfont command below.
+% Input to XeLaTeX is full Unicode, so Unicode characters can be typed directly into the source.
+
+% The next lines tell TeXShop to typeset with xelatex, and to open and save the source with Unicode encoding.
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[12pt]{article}
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}
+\usepackage{amssymb}
+
+% Will Robertson's fontspec.sty can be used to simplify font choices.
+% To experiment, open /Applications/Font Book to examine the fonts provided on Mac OS X,
+% and change "Hoefler Text" to any of these choices.
+
+\usepackage{fontspec,xltxtra,xunicode}
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont[Mapping=tex-text]{Times}
+\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Gill Sans}
+\setmonofont[Scale=MatchLowercase]{Andale Mono}
+
+\title{K\d rti : ``d\=ev\=\i br\=ova samayamid\=e''}
+\author{\'Sy\=am\=a \'S\=astri}
+%\date{}                                           % Activate to display a given date or no date
+
+\def \info#1#2#3#4{%
+	\begin{tabular}{ll}
+	\textbf{R\=ag\=a}: & #1 \\
+	\textbf{\=Ar\=oha\d na}: & #2 \\
+	\textbf{Avar\=oha\d na}: & #3 \\\\
+	\textbf{T\=a\d l\=a}: & #4
+	\end{tabular}
+	}
+
+\def \speed{0.276in}
+\def \f#1{\makebox[0.069in][l]{#1}}
+\def \t#1{\makebox[0.138in][l]{#1}}
+\def \s#1{\makebox[\speed][l]{#1}}
+
+\def \four#1{#1\s{}}
+\def \Four#1[#2]{#1#2}
+\def \Sl {\s{\d{S}}}
+\def \rl {\s{\d{r}}}
+\def \Rl {\s{\d{R}}}
+\def \gl {\s{\d{g}}}
+\def \Gl {\s{\d{G}}}
+\def \ml {\s{\d{m}}}
+\def \Ml {\s{\d{M}}}
+\def \Pl {\s{\d{P}}}
+\def \dal {\s{\d{d}}}
+\def \Dl {\s{\d{D}}}
+\def \nl {\s{\d{n}}}
+\def \Nl {\s{\d{N}}}
+\def \S {\s{S}}
+\def \r {\s{r}}
+\def \R {\s{R}}
+\def \g {\s{g}}
+\def \G {\s{G}}
+\def \m {\s{m}}
+\def \M {\s{M}}
+\def \P {\s{P}}
+\def \da {\s{d}}
+\def \D {\s{D}}
+\def \n {\s{n}}
+\def \N {\s{N}}
+\def \Su {\s{\.S}}
+\def \ru {\s{\.r}}
+\def \Ru {\s{\.R}}
+\def \gu {\s{\.g}}
+\def \Gu {\s{\.G}}
+\def \mu {\s{\.m}}
+\def \Mu {\s{\.M}}
+\def \Pu {\s{\.P}}
+\def \dau {\s{\.d}}
+\def \Du {\s{\.D}}
+\def \nu {\s{\.n}}
+\def \Nu {\s{\.N}}
+%\def \p {\s{,}}
+
+\def \lagu {\s{$||$}}
+\def \dhru {\s{$|$}}
+
+\def \kutti#1{\scriptsize #1}
+
+\begin{document}
+\maketitle
+
+\info{cint\=ama\d ni}{S g R g M g R g P M P D n \.S}{\.S n d P M g R S}{\=adi}
+
+\vspace{0.25 in}
+
+%C1: lOkajananI nApai dayalEdA mAyamma nI dAsuDu gAdA shrI kAHnci vihAriNI kalyANI EkAmrEshvaruni priya bhAmayaiyunna nikEmammA entO bhAramA vinumA nA talli
+
+%C2: rEpu mApani ceppitE nE vinanu dEvi ika tALanu nEnu I proddu dayacEyavE kRpajUDavE nI padAbjamulE madilO sadA yeHnci nIprApu kOriyunnAnammA mudamutO mA talli
+
+%C3: shyAmakRSNuni sOdari kaumAri shaHNkari bimbAdari gauri hEmAcalajE lalitE paradEvatE kAmAkSi ninuvunA bhmilO prEmatO kApADEvareva runnArammA nA talli
+
+
+\begin{tabular}{ll}
+Pallavi: & \emph{d\=ev\=\i{} br\=ova samayamid\=e}\\
+ & \emph{ati v\=egam\=e vacci}\\
+ & \emph{n\=a vetalu d\=\i rcci karu\d ni\~ncav\=e} \\
+ & \emph{\'sankari k\=am\=ak\d si}\\
+ 
+Cara\d nam 1: & \emph{l\=oka janani n\=apai dayal\=ed\=a n\=ed\=a su\d du g\=ad\=a} \\
+ & \emph{\'sr\=\i{} k\=a\~nc\=\i{} vih\=ari\d n\=\i{} kaly\=a\d n\=\i{}} \\
+ & \emph{\=ek\=ambr\=e\'svarunipriya bh\=amayaiyunna-}\\
+ & \emph{n\=\i{}k\=emamm\=a ent\=o bh\=aram\=a vinum\=a n\=a talli} \\ 
+ & \emph{(d\=ev\=\i)}\\
+ 
+Cara\d nam 2: & \emph{\'sy\=amak\d r\d s\d nuni s\=odari kaum\=ari bimb\=adari gauri} \\ 
+ & \emph{h\=em\=a p\=ahi lalit\=e parad\=evat\=a} \\ 
+ & \emph{k\=amak\d s\=\i{} ninuvin\=a bh\=umil\=o pr\=emat\=o} \\ 
+ & \emph{k\=ap\=ad\=evar-evarunn\=aramm\=a nannu}\\
+ & \emph{(d\=ev\=\i)} 
+\end{tabular}
+ 
+\section*{References}
+\begin{enumerate}
+\item Recorded performance by Shri K. V. Narayanaswamy (primary)
+\item {\scriptsize \verb|http://www.medieval.org/music/world/carnatic/lyrics/TKG/devi_brova_samayamide.html|}
+\end{enumerate}
+
+\section*{Lyrics as given in ref 2}
+\begin{tabular}{ll}
+Pallavi: & \emph{d\=ev\=\i{} br\=ova samayamid\=e}\\
+ & \emph{ati v\=egam\=e vacci}\\
+ & \emph{n\=a vetalu d\=\i rcci karu\d ni\~ncav\=e} \\
+ & \emph{\'sankari k\=am\=ak\d si}\\
+
+Cara\d nam 1: & \emph{l\=oka janan\=\i{} n\=apai dayal\=ed\=a \textbf{m\=ayamma} n\=ed\=a su\d du g\=ad\=a} \\
+ & \emph{\'sr\=\i{} k\=a\~nc\=\i{} vih\=ari\d n\=\i{} kaly\=a\d n\=\i{}} \\
+ & \emph{\=ek\=ambr\=e\'svarunipriya bh\=amayaiyunna-}\\
+ & \emph{n\=\i{}k\=emamm\=a ent\=o bh\=aram\=a vinum\=a n\=a talli} \\ 
+ & \emph{(d\=ev\=\i)}\\
+ 
+\textbf{Cara\d nam 2}: & \textbf{\emph{r\=epu m\=apani ceppit\=e n\=e vinanu}} \\
+ & \textbf{\emph{d\=evi ika t\=a\d lanu n\=enu}} \\
+ & \textbf{\emph{\=\i{} proddu dayac\=eyav\=e k\d rpaj\=u\d dav\=e}} \\
+ & \textbf{\emph{n\=\i{} pad\=ambujamul\=e madil\=o sad\=a ye\~nci}} \\
+ & \textbf{\emph{n\=\i pr\=apu k\=oriyunn\=anamm\=a mudamut\=o m\=a talli}} \\
+ & \emph{(d\=ev\=\i)}\\
+
+Cara\d nam \textbf{3}: & \emph{\'sy\=amak\d r\d s\d nuni s\=odari kaum\=ari \textbf{\'sankari} bimb\=adari gauri} \\ 
+ & \emph{\textbf{h\=em\=acalaj\=e} lalit\=e \textbf{parad\=evat\=e}} \\ 
+ & \emph{k\=amak\d s\=\i{} ninuvin\=a bh\=umil\=o pr\=emat\=o} \\ 
+ & \emph{k\=ap\=ad\=evar-evarunn\=aramm\=a \textbf{n\=a talli}}\\
+ & \emph{(d\=ev\=\i)} 
+
+\end{tabular}
+
+\end{document}  
