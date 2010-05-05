@@ -1,0 +1,224 @@
+% XeLaTeX can use any Mac OS X font. See the setromanfont command below.
+% Input to XeLaTeX is full Unicode, so Unicode characters can be typed directly into the source.
+
+% The next lines tell TeXShop to typeset with xelatex, and to open and save the source with Unicode encoding.
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[12pt]{article}
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{a4paper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}
+\usepackage{amssymb}
+
+% Will Robertson's fontspec.sty can be used to simplify font choices.
+% To experiment, open /Applications/Font Book to examine the fonts provided on Mac OS X,
+% and change "Hoefler Text" to any of these choices.
+
+\usepackage{fontspec,xltxtra,xunicode}
+\usepackage[pdftex,colorlinks=true,urlcolor=cyan]{hyperref}
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont[Mapping=tex-text]{Times}
+\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Gill Sans}
+\setmonofont[Scale=MatchLowercase]{Andale Mono}
+\def \deva#1{{\fontspec{DevanagariMT}#1}}
+\def \tamil#1{{\fontspec{InaiMathi}#1}}
+
+
+% info{raga}{arohana}{avarohana}{tala}
+\def \info#1#2#3#4{%
+	\begin{tabular}{ll}
+	\textbf{R\=ag\=a}: & #1 \\
+	\textbf{\=Ar\=oha\d na}: & #2 \\
+	\textbf{Avar\=oha\d na}: & #3 \\\\
+	\textbf{T\=a\d l\=a}: & #4
+	\end{tabular}
+	}
+
+\def \speed{0.3in}
+\def \f#1{\makebox[0.075in][l]{#1}}
+\def \t#1{\makebox[0.15in][l]{#1}}
+\def \s#1{\makebox[\speed][l]{#1}}
+
+\def \four#1{#1\s{}}
+\def \Four#1[#2]{#1#2}
+\def \thr#1{#1\s{}}
+\def \Sl {\s{\d{S}}}
+\def \rl {\s{\d{r}}}
+\def \Rl {\s{\d{R}}}
+\def \gl {\s{\d{g}}}
+\def \Gl {\s{\d{G}}}
+\def \ml {\s{\d{m}}}
+\def \Ml {\s{\d{M}}}
+\def \Pl {\s{\d{P}}}
+\def \dal {\s{\d{d}}}
+\def \Dl {\s{\d{D}}}
+\def \nl {\s{\d{n}}}
+\def \Nl {\s{\d{N}}}
+\def \S {\s{S}}
+\def \r {\s{r}}
+\def \R {\s{R}}
+\def \g {\s{g}}
+\def \G {\s{G}}
+\def \m {\s{m}}
+\def \M {\s{M}}
+\def \P {\s{P}}
+\def \da {\s{d}}
+\def \D {\s{D}}
+\def \n {\s{n}}
+\def \N {\s{N}}
+\def \Su {\s{\.S}}
+\def \ru {\s{\.r}}
+\def \Ru {\s{\.R}}
+\def \gu {\s{\.g}}
+\def \Gu {\s{\.G}}
+\def \mu {\s{\.m}}
+\def \Mu {\s{\.M}}
+\def \Pu {\s{\.P}}
+\def \dau {\s{\.d}}
+\def \Du {\s{\.D}}
+\def \nu {\s{\.n}}
+\def \Nu {\s{\.N}}
+\def \p {\s{,}}
+\def \w {\s{}}
+
+\def \lagu {\s{$||$}}
+\def \dhru {\s{$|$}}
+
+\def \kutti#1{\scriptsize #1}
+\def \netref#1{{\scriptsize {\tt #1} (\href{#1}{go there})}}
+
+\title{K\d rti : ``k\=a\'si vis\=al\=ak\'s\=\i m''}
+\author{Muttusw\=ami D\=\i k\'sitar}
+%\date{}                                           % Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+
+\info{p\=urvi kaly\=a\d ni}{S r G M P D P \.S}{\.S N D P M G r S}{r\=upaka}
+
+\vspace{0.25 in}
+
+\begin{tabular}{ll}
+\textbf{Pallavi:}&\\
+\emph{k\=a\'s\=\i{} vis\=al\=ak\'s\=\i{}m bhaj\=eham bhaj\=e, \'sr\=\i{}} & \\
+&\\
+\textbf{Anupallavi:}&\\
+\emph{k\=a\'s\=\i{} vi\'sv\=e\'svara man\=oll\=asa k\=ari\d n\=\i{}m} & \\
+\emph{karu\d n\=a rasa lahar\=\i{}m guru guha vi\'sv\=asin\=\i{}m} & \\
+&\\
+\textbf{Caranam:}&\\
+\emph{k\=a\'s\=\i{} pura v\=asin\=\i{}m, k\=amita phala d\=ayin\=\i{}m} & \\
+\emph{kali kalma\'sa n\=a\'sin\=\i{}m} & \\
+\emph{gandharva gh\=o\'sita gamaka kriya m\=odin\=\i{}m} & \\
+&\\
+\textbf{(madhyama kala s\=ahityam)}&\\
+\emph{p\=asa m\=ocan\=\i{}m kap\=ala \'s\=ulin\=\i{}m, pannaga v\=e\d n\=\i{}m} & \\
+\emph{d\=asa jana mukunda vara prad\=ayin\=\i{}m}
+\end{tabular}
+
+\subsection*{Pallavi}
+
+\begin{tabular}{l}
+\four{\G\p\R\p}\four{\G\p\p\p}\four{\p\p\M\P}\lagu\\
+\textit{\four{\s{k\=a}\w\w\w}\four{\s{\'s\=\i}\w\w\w}\four{\w\w\s{vi}\w}}\lagu\\
+\\
+\four{\p\D\P\p}\four{\Su\p\p\p}\four{\Su\p\p\p}\lagu\\
+\textit{\four{\w\s{s\=a}\w\w}\four{\s{l\=a}\w\w\w}\four{\s{k\'s\=\i m}\w\w\w}}\lagu\\
+\\
+\four{\N\D\p\D}\four{\P\p\P\p}\four{\M\D\P\M}\lagu\\
+\four{\N\D\p\D}\four{\P\p\P\p}\four{\M\D\P\M}\lagu\\
+\four{\D\Gu\ru\Su}\four{\N\D\D\Su}\four{\N\t{D}\t{P}\t{M}\t{,}\t{G}\t{,}}\lagu\\
+\textit{\four{\s{bha}\w\w\s{j\=e}}\four{\w\w\s{ham}\w}\four{\w\s{bha}\w\w}}\lagu\\
+\\
+\four{\G\R\G\p}\four{\p\p\p\p}\four{\p\p\S\R}\lagu\\
+\four{\G\R\G\p}\four{\p\p\p\r}\four{\S\Dl\S\R}\lagu\\
+\four{\G\M\D\Su}\four{\N\D\P\M}\four{\G\r\S\r}\lagu\\
+\textit{\four{\s{j\=e}\w\w\w}\four{\w\w\w\w}\four{\w\w\s{\'sr\=\i}\w}}\lagu\\
+\end{tabular}
+
+\subsection*{Anupallavi}
+\begin{tabular}{l}
+\four{\P\p\D\p}\four{\P\p\Su\p}\four{\p\p\p\p}\lagu\\
+\four{\P\N\D\D}\four{\P\P\Su\p}\four{\p\p\p\p}\lagu\\
+\textit{\four{\s{k\=a}\w\w\w}\four{\w\w\s{\'s\=\i}\w}\four{\w\w\w\w}}\lagu\\
+\\
+\four{\ru\p\Su\p}\four{\D\p\p\p}\four{\ru\p\Su\p}\lagu\\
+\textit{\four{\s{vi}\w\w\w}\four{\s{\'sv\=e}\w\w\w}\four{\s{\'sva}\w\s{ra}\w}}\lagu\\
+\\
+\four{\Su\p\p\D}\four{\p\p\ru\p}\four{\p\p\Su\p}\lagu\\
+\textit{\four{\s{ma}\w\w\s{n\=ol}}\four{\w\w\s{l\=a}\w}\four{\w\w\s{sa}\w}}\lagu\\
+\\
+\four{\Su\p\p\D}\four{\Gu\ru\p\Su}\four{\p\p\p\p}\lagu\\
+\textit{\four{\s{k\=a}\w\w\w}\four{\s{ri}\w\w\s{\d n\=\i{}m}}\four{\w\w\w\w}}\lagu\\
+\\
+\four{\Gu\p\ru\p}\four{\Mu\p\Gu\p}\four{\ru\p\Su\p}\lagu\\
+\textit{\four{\s{ka}\w\s{ru}\w}\four{\s{\d n\=a}\w\w\w}\four{\s{ra}\w\s{sa}\w}}\lagu\\
+\\
+\four{\D\Gu\ru\ru}\four{\Su\p\p\p}\four{\p\p\p\p}\lagu\\
+\textit{\four{\s{la}\w\s{ha}\w}\four{\s{r\=\i{}m}\w\w\w}\four{\w\w\w\w}}\lagu\\
+\\
+\four{\Gu\p\ru\p}\four{\N\p\D\p}\four{\P\M\G\p}\lagu\\
+\textit{\four{\s{gu}\w\s{ru}\w}\four{\s{gu}\w\s{ha}\w}\four{\s{vi}\w\w\w}}\lagu\\
+\\
+\four{\Su\N\D\p}\four{\P\M\G\r}\four{\p\S\p\r}\lagu\\
+\textit{\four{\s{\'sv\=a}\w\w\w}\four{\s{si}\w\s{n\=\i{}m}\w}\four{\w\w\w\w}}\lagu\\
+\end{tabular}
+
+\subsection*{Caranam}
+\begin{tabular}{l}
+\four{\p\p\P\p}\four{\p\P\p\p}\four{\P\p\P\p}\lagu\\
+\textit{\four{\w\w\s{k\=a}\w}\four{\w\s{\'s\=\i}\w\w}\four{\s{pu}\w\s{ra}\w}}\lagu\\
+\\
+\four{\P\p\p\p}\four{\D\N\t{D}\t{P}\t{M}\t{,}}\four{\G\p\p\p}\lagu\\
+\textit{\four{\s{v\=a}\w\w\w}\four{\s{si}\w\s{n\=\i{}m}\w}\four{\w\w\w\w}}\lagu\\
+\\
+\four{\M\p\G\p}\four{\M\p\D\p}\four{\N\p\D\p}\lagu\\
+\textit{\four{\s{k\=a}\w\w\w}\four{\s{mi}\w\s{ta}\w}\four{\s{pha}\w\s{la}\w}}\lagu\\
+\\
+\four{\G\D\D\P}\four{\M\G\G\r}\four{\p\S\p\r}\lagu\\
+\four{\G\D\D\P}\four{\M\G\G\r}\four{\p\S\p\p}\lagu\\
+\textit{\four{\s{d\=a}\w\w\w}\four{\w\w\s{yi}\w}\four{\w\s{n\=\i{}m}\w\w}}\lagu\\
+\\
+\four{\G\M\s{\textit{(k\=as\=\i)}}\w}\four{\w\w\w\w}\four{\w\w\w\w}\w\\
+\\
+\four{\G\p\r\p}\four{\S\p\p\r}\four{\Dl\p\S\p}\lagu\\
+\textit{\four{\s{ka}\w\s{li}\w}\four{\s{kal}\w\w\w}\four{\s{ma}\w\s{\'sa}\w}}\lagu\\
+\\
+\four{\r\S\Dl\S}\four{\Pl\Dl\Pl\p}\four{\S\p\p\p}\lagu\\
+\textit{\four{\s{n\=a}\w\w\w}\four{\s{\'si}\w\w\w}\four{\s{n\=\i{}m}\w\w\w}}\lagu\\
+\\
+\four{\G\p\r\p}\four{\M\p\G\p}\four{\N\p\D\p}\lagu\\
+\textit{\four{\s{gan}\w\w\w}\four{\s{dhar}\w\w\w}\four{\s{va}\w\w\w}}\lagu\\
+\\
+\four{\D\Gu\ru\p}\four{\Su\ru\D\p}\four{\Su\p\ru\p}\lagu\\
+\textit{\four{\s{gh\=o}\w\w\w}\four{\w\w\w\w}\four{\s{\'si}\w\s{ta}\w}}\lagu\\
+\\
+\four{\Gu\p\Mu\p}\four{\Gu\p\ru\p}\four{\Su\p\ru\p}\lagu\\
+\textit{\four{\s{ga}\w\s{ma}\w}\four{\s{ka}\w\w\w}\four{\s{kri}\w\s{ya}\w}}\lagu\\
+\\
+\four{\ru\ru\Su\N}\four{\D\Su\N\D}\four{\P\M\G\r}\lagu\\
+\textit{\four{\s{m\=o}\w\w\w}\four{\s{di}\w\w\s{n\=\i{}m}}\four{\w\w\w\w}}\lagu\\
+\end{tabular}
+
+\subsubsection*{madhyama k\=ala sahityam}
+\begin{tabular}{r}
+\four{\P\M\G\M}\four{\G\r\S\r}\four{\p\G\r\p}\lagu\\
+\textit{\four{\s{p\=a}\w\w\s{sa}}\four{\s{m\=o}\w\s{ca}\s{n\=\i{}m}}\four{\w\s{ka}\s{p\=a}\w}}\lagu\\
+\\
+\four{\P\M\p\D}\four{\P\p\p\p}\four{\p\M\P\p}\lagu\\
+\textit{\four{\s{la}\s{\'s\=u}\w\s{li}}\four{\s{n\=\i{}m}\w\w\w}\four{\w\s{pan}\w\w}}\lagu\\
+\\
+\four{\D\P\ru\p}\four{\p\Su\p\D}\four{\p\Su\Gu\ru}\lagu\\
+\textit{\four{\s{na}\s{ga}\s{v\=e}\w}\four{\w\s{\d n\=\i{}m}\w\s{d\=a}}\four{\w\s{sa}\s{ja}\s{na}}}\lagu\\
+\\
+\four{\Mu\Gu\p\ru}\four{\ru\Su\N\D}\four{\P\M\G\r}\lagu\\
+\textit{\four{\s{mu}\s{kun}\w\s{da}}\four{\s{va}\s{ra}\w\s{pra}}\four{\s{d\=a}\w\s{yi}\s{n\=\i{}m}}}\lagu\\
+(\textit{k\=as\=\i{} vis\=al\=ak\'s\=\i{}m})
+\end{tabular}
+
+%\subsection
+\end{document}  
