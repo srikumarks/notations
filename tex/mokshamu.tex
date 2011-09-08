@@ -1,0 +1,242 @@
+% XeLaTeX can use any Mac OS X font. See the setromanfont command below.
+% Input to XeLaTeX is full Unicode, so Unicode characters can be typed directly into the source.
+
+% The next lines tell TeXShop to typeset with xelatex, and to open and save the source with Unicode encoding.
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[12pt]{article}
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}
+\usepackage{amssymb}
+
+% Will Robertson's fontspec.sty can be used to simplify font choices.
+% To experiment, open /Applications/Font Book to examine the fonts provided on Mac OS X,
+% and change "Hoefler Text" to any of these choices.
+
+\usepackage{fontspec,xltxtra,xunicode}
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont[Mapping=tex-text]{Times}
+\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Gill Sans}
+\setmonofont[Scale=MatchLowercase]{Andale Mono}
+\def \deva#1{{\fontspec{DevanagariMT}#1}}
+\def \tamil#1{{\fontspec{InaiMathi}#1}}
+
+\title{Var\d{n}am: ``karu\d nimpa''}
+\author{Tiruvotriy\=ur Ty\=agayyar}
+\date{}                                           % Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+\begin{tabular}{ll}
+%\textbf{Type}: & Var\d nam \\\\
+\textbf{R\=ag\=a}: & Sah\=an\=a \\
+\textbf{\=Ar\=oha\d na}: & S R G m P m D n \.S \\
+\textbf{Avar\=oha\d na}: & \.S n D P m G m R G R S \\\\
+\textbf{T\=a\d l\=a}: & \=Adi
+\end{tabular}
+
+\vspace{0.25 in}
+
+\begin{tabular}{ll}
+Pallavi: & \emph{karu\d nimpa idi manci taru\d namu s\=ami} \\
+& \deva{करुणिंप इदि मँचि तरुणमु सामि}\\
+Anupallavi: & \emph{parula v\=e\d{d}al\=enu n\=a p\=ali \'sr\=\i{} v\=e\d{n}ug\=op\=ala d\=eva} \\
+&  \deva{परुल वेडलेनु ना पालि श्री वेणुगोपाल देव}\\
+Cara\d nam: & \emph{k\d rpa j\=u\d dumi \=\i{} v\=e\d{l}a}\\
+&  \deva{कृप जूडुमि ई वेल}
+\end{tabular}
+
+\def \speed{0.276in}
+\def \f#1{\makebox[0.069in][l]{#1}}
+\def \t#1{\makebox[0.138in][l]{#1}}
+\def \s#1{\makebox[\speed][l]{#1}}
+
+\def \four#1{#1\s{}}
+\def \Four#1[#2]{#1#2}
+\def \Sl {\s{\d{S}}}
+\def \rl {\s{\d{r}}}
+\def \Rl {\s{\d{R}}}
+\def \gl {\s{\d{g}}}
+\def \Gl {\s{\d{G}}}
+\def \ml {\s{\d{m}}}
+\def \Ml {\s{\d{M}}}
+\def \Pl {\s{\d{P}}}
+\def \dal {\s{\d{d}}}
+\def \Dl {\s{\d{D}}}
+\def \nl {\s{\d{n}}}
+\def \Nl {\s{\d{N}}}
+\def \S {\s{S}}
+\def \r {\s{r}}
+\def \R {\s{R}}
+\def \g {\s{g}}
+\def \G {\s{G}}
+\def \m {\s{m}}
+\def \M {\s{M}}
+\def \P {\s{P}}
+\def \da {\s{d}}
+\def \D {\s{D}}
+\def \n {\s{n}}
+\def \N {\s{N}}
+\def \Su {\s{\.S}}
+\def \ru {\s{\.r}}
+\def \Ru {\s{\.R}}
+\def \gu {\s{\.g}}
+\def \Gu {\s{\.G}}
+\def \mu {\s{\.m}}
+\def \Mu {\s{\.M}}
+\def \Pu {\s{\.P}}
+\def \dau {\s{\.d}}
+\def \Du {\s{\.D}}
+\def \nu {\s{\.n}}
+\def \Nu {\s{\.N}}
+\def \p {\s{,}}
+
+\def \lagu {\s{$||$}}
+\def \dhru {\s{$|$}}
+
+\vskip 1in
+\begin{tabular}{l}
+\four{\p\p\R\p}\four{\p\g\S\p}\four{\R\p\g\p}\Four{\m\p\p\p}[\lagu]\\
+%\four{\p\p\s{D}\p}\four{\p\s{E$_\flat$}\s{C}\p}\four{\s{D}\p\s{E$_\flat$}\p}\four{\s{F}\p\p\p}\\
+\textit{\four{\s{}\s{}\s{mo}\s{}}\four{\s{}\s{\d{k}\'sa}\s{mu}\s{}}\four{\s{ga}\s{}\s{la}\s{}}\four{\s{d\=a}\s{}\s{}\s{}}}\\
+\four{\p\p\P\da}\Four{\n\Su\p\p}[\dhru]\four{\Su\n\n\da}\Four{\da\m\m\G}[\lagu]\\
+\textit{\four{\s{}\s{}\s{bhu}\s{vi}}\four{\s{lo}\s{}\s{}\s{}}\four{\s{ji}\s{}\s{}\s{}}\four{\s{}\s{}\s{van}\s{}}}\\
+\four{\G\S\s{...}\s{}}\\
+\four{}\\
+\textit{}
+\end{tabular}
+
+\vskip 1in
+\begin{tabular}{l}
+\four{\p\p\s{D}\p}\Four{\p\s{E$_\flat$}\s{C}\p}[\lagu]\Four{\s{D}\p\s{E$_\flat$}\p}[\dhru]\Four{\s{F}\p\p\p}[\lagu]\\
+\textit{\four{\s{}\s{}\s{m\=o}\s{}}\four{\s{}\s{\d{k}\'sa}\s{mu}\s{}}\four{\s{ga}\s{}\s{la}\s{}}\four{\s{d\=a}\s{}\s{}\s{}}}\\
+\four{\p\p\s{D}\p}\Four{\p\s{E$_\flat$}\s{C}\p}[\lagu]\Four{\s{D}\p\s{E$_\flat$}\p}[\dhru]\Four{\s{F}\s{C}\s{D}\s{E$_\flat$}}[\lagu]\\
+\textit{\four{\s{}\s{}\s{m\=o}\s{}}\four{\s{}\s{\d{k}\'sa}\s{mu}\s{}}\four{\s{ga}\s{}\s{la}\s{}}\four{\s{d\=a}\s{}\s{}\s{}}}\\
+\four{\s{F}\p\s{...}\s{}}
+\end{tabular}
+
+\vskip 1in
+\begin{tabular}{l}
+\four{\p\p\s{re}\p}\Four{\p\s{mi$_\flat$}\s{do}\p}[\lagu]\Four{\s{re}\p\s{mi$_\flat$}\p}[\dhru]\Four{\s{fa}\p\p\p}[\lagu]\\
+\textit{\four{\s{}\s{}\s{m\=o}\s{}}\four{\s{}\s{\d{k}\'sa}\s{mu}\s{}}\four{\s{ga}\s{}\s{la}\s{}}\four{\s{d\=a}\s{}\s{}\s{}}}\\
+\four{\p\p\s{re}\p}\Four{\p\s{mi$_\flat$}\s{do}\p}[\lagu]\Four{\s{re}\p\s{mi$_\flat$}\p}[\dhru]\Four{\s{fa}\s{do}\s{re}\s{mi$_\flat$}}[\lagu]\\
+\textit{\four{\s{}\s{}\s{m\=o}\s{}}\four{\s{}\s{\d{k}\'sa}\s{mu}\s{}}\four{\s{ga}\s{}\s{la}\s{}}\four{\s{d\=a}\s{}\s{}\s{}}}\\
+\four{\s{fa}\p\s{...}\s{}}
+\end{tabular}
+
+
+\subsection*{Pallavi}
+
+\begin{tabular}{l}
+%\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}
+\P\p\m\p\s{}\G\p\G\m\s{}\R\p\G\R\s{}\S\p\p\p\lagu\\
+
+\textit{\s{ka}\s{}\s{ru}\s{}\s{}\s{\d nim}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{pa}\s{}\s{}\s{}\s{}} \\
+\\
+\nl\S\R\G\s{}\R\s{S-}\nl\S\dhru\Dl\Pl\ml\Dl\s{}\s{,}\nl\S\R\lagu \\
+\textit{\s{i}\s{}\s{}\s{}\s{}\s{di}\s{}\s{}\s{}\s{}\s{man}\s{}\s{}\s{ci}\s{}\s{}\s{}\s{}\s{}\s{}} \\
+\\
+\P\m\G\m\s{}\R\s{G}\R\S\s{}\s{,-}\R\G\m\s{}\P\m\D\s{,}\lagu \\
+\textit{\s{ta}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{ru}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{\d na}\s{}\s{}} \\
+\\
+\n\s{,}\s{\.{S}---}\P\s{}\s{,}\s{,-}\R\G\dhru\m\D\s{P-}\P\s{}\m\G\m\R\lagu \\
+\textit{\s{}\s{}\s{}\s{mu}\s{}\s{}\s{}\s{s\=a}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{mi}\s{}\s{}\s{}} \\
+\end{tabular}
+
+\subsection*{Anupallavi}
+%\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\lagu \\
+%\textit{\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}} \\
+%\\
+%\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\dhru\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\lagu \\
+%\textit{\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}} \\
+%\\
+
+
+\begin{tabular}{l}
+\s{D}\s{n}\s{D}\s{-D}\s{}\s{P-}\s{P}\s{D}\s{P}\s{}\s{P}\s{m-}\s{D}\s{P}\s{}\s{m-}\s{G}\s{m}\s{R}\lagu \\
+\textit{\s{pa}\s{}\s{}\s{ru}\s{}\s{}\s{la}\s{}\s{}\s{}\s{}\s{}\s{v\=e}\s{}\s{}\s{}\s{\d{d}a}\s{}\s{}} \\
+\\
+\s{G}\s{m}\s{P-}\nl\s{}\s{S}\s{R}\s{G}\s{m}\dhru\s{P}\s{,}\s{m}\s{,}\s{}\s{D}\s{n}\Su\s{,}\lagu \\
+\textit{\s{l\=e}\s{}\s{}\s{nu}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{}\s{n\=a}\s{}} \\
+\\
+\s{D}\s{n}\Su\Ru\s{}\s{,}\s{\.R-}\s{n}\Su\s{}\Ru\Gu\mu\Ru\s{}\s{,}\Gu\Ru\Su\lagu \\
+\textit{\s{p\=a}\s{}\s{}\s{li}\s{}\s{}\s{}\s{\'sr\=\i}\s{}\s{}\s{}\s{v\=e}\s{}\s{}\s{}\s{}\s{\d{n}u}\s{}\s{}} \\
+\\
+\Ru\s{n}\s{,-}\Su\s{}\s{D}\s{,-}\s{n}\s{D}\dhru\s{P-}\s{D}\s{P}\s{P}\s{}\s{m-}\s{G}\s{m}\s{R}\lagu \\
+\textit{\s{g\=o}\s{}\s{}\s{p\=a}\s{}\s{}\s{}\s{la}\s{}\s{}\s{}\s{d\=e}\s{}\s{}\s{}\s{}\s{va}\s{}\s{}}
+\end{tabular}
+
+\subsection*{Mukt\=ayi svaram}
+
+%\four{\s{}\s{}\s{}\s{}}\four{\s{}\s{}\s{}\s{}}\four{\s{}\s{}\s{}\s{}}\Four{\s{}\s{}\s{}\s{}}[\lagu] \\
+%\four{\s{}\s{}\s{}\s{}}\Four{\s{}\s{}\s{}\s{}}[\dhru]\four{\s{}\s{}\s{}\s{}}\Four{\s{}\s{}\s{}\s{}}[\lagu] \\
+
+\begin{tabular}{r}
+\four{\s{P}\s{,}\s{,}\s{P}}\four{\s{m}\s{G}\s{m}\s{,}}\four{\s{,}\s{R}\s{G}\s{m}}\Four{\s{P}\s{m}\s{G}\s{m}}[\lagu] \\
+\four{\s{R}\s{,}\s{,}\s{G}}\Four{\s{R}\s{S}\nl\S}[\dhru]\four{\s{R}\s{G}\s{m}\s{P}}\Four{\s{m}\s{D}\s{n}\Su}[\lagu] \\
+\\
+\four{\s{P}\s{,}\s{D}\s{n}}\four{\Su\s{n}\Su\Ru}\four{\Gu\mu\Ru\s{,}}\Four{\Gu\Ru\Su\n}[\lagu] \\
+\four{\Su\Ru\n\Su}\Four{\s{,}\Su\P\D}[\dhru]\four{\m\P\s{,}\nl}\Four{\S\R\G\m}[\lagu]\\
+(\emph{karu\d{n}impa})
+\end{tabular}
+
+\subsection*{Cara\d nam}
+%\four{\s{}\s{}\s{}\s{}}\four{\s{}\s{}\s{}\s{}}\four{\s{}\s{}\s{}\s{}}\Four{\s{}\s{}\s{}\s{}}[\lagu] \\
+%\four{\s{}\s{}\s{}\s{}}\Four{\s{}\s{}\s{}\s{}}[\dhru]\four{\s{}\s{}\s{}\s{}}\Four{\s{}\s{}\s{}\s{}}[\lagu] \\
+\begin{tabular}{l}
+\four{\D\s{,}\D\s{,}}\four{\s{,}\s{,-}\n\s{,}}\four{\s{,}\s{,}\n\Su}\Four{\D\s{,}\n\D}[\lagu] \\
+\textit{\four{\s{k\d r}\s{}\s{pa}\s{}}\four{\s{}\s{}\s{j\=u}\s{}}\four{\s{}\s{}\s{}\s{}}\four{\s{}\s{}\s{du}\s{}}} \\
+\\
+\four{\P\s{,}\s{,}\s{,}}\Four{\s{,}\s{,-}\D\P}[\dhru]\four{\m\G\m\R}\Four{\G\m\P\m}[\lagu] \\
+\textit{\four{\s{mi}\s{}\s{}\s{}}\four{\s{}\s{}\s{\=\i}\s{}}\four{\s{}\s{v\=e}\s{}\s{\d{l}a}}\four{\s{}\s{}\s{}\s{}}} \\
+\end{tabular}
+
+\subsection*{Ci\d t\d ta svaram}
+%\begin{tabular}{l}
+%\four{\s{}\s{}\s{}\s{}}\four{\s{}\s{}\s{}\s{}}\four{\s{}\s{}\s{}\s{}}\Four{\s{}\s{}\s{}\s{}}[\lagu] \\
+%\four{\s{}\s{}\s{}\s{}}\Four{\s{}\s{}\s{}\s{}}[\dhru]\four{\s{}\s{}\s{}\s{}}\Four{\s{}\s{}\s{}\s{}}[\lagu] \\
+%\end{tabular}
+
+\begin{tabular}{lr}
+(1)&\four{\P\s{,}\s{,}\s{,}}\four{\s{,}\s{,}\m\s{,}}\four{\s{,}\s{,}\D\s{,}}\Four{\P\s{,}\m\s{,}}[\lagu] \\
+&\four{\G\s{,}\s{,}\m}\Four{\s{,}\s{,}\R\s{,}}[\dhru]\four{\s{,}\G\s{,}\m}\Four{\s{,}\P\s{,}\m}[\lagu]\\
+&(\emph{k\d{r}pa})\\
+\\
+(2)&\four{\D\s{,}\P\m}\four{\G\m\R\s{,}}\four{\G\m\s{P-}\nl}\Four{\S\R\G\m}[\lagu] \\
+&\four{\P\s{,}\m\G}\Four{\s{,}\m\R\s{,}}[\dhru]\four{\G\R\s{S-}\R}\Four{\G\m\P\m}[\lagu]\\
+&(\emph{k\d{r}pa})\\
+\\
+(3)&\four{\P\D\m\P}\four{\G\s{m-}\R\G}\four{\m\P\m\G}\Four{\m\R\G\s{R-}}[\lagu] \\
+&\four{\S\R\nl\S}\Four{\Dl\nl\S\R}[\dhru]\four{\G\s{m-}\S\R}\Four{\G\m\P\D}[\lagu]\\
+\\
+&\four{\P\s{m-}\D\n}\four{\Su\R\S\R}\four{\n\s{\d{S}-}\Ru\Gu}\Four{\mu\Ru\Gu\Ru}[\lagu] \\
+&\four{\Su\s{\.{R}-}\n\Ru}\Four{\Su\D\n\Su}[\dhru]\four{\D\n\s{D-}\P}\Four{\D\m\P\m}[\lagu]\\
+&(\emph{k\d{r}pa})\\
+\\
+(4)&\four{\n\s{,}\s{,}\Su}\four{\Ru\s{\.{S}-}\n\Ru}\four{\s{\d{S}-}\n\Su\n}\Four{\D\s{,}\n\D}[\lagu] \\
+&\four{\P\s{,}\s{,}\R}\Four{\s{,}\s{,}\G\m}[\dhru]\four{\P\s{m-}\G\m}\Four{\R\G\R\S}[\lagu] \\
+\\
+&\four{\R\G\m\P}\four{\s{,}\s{P-}\m\P}\four{\m\D\s{,}\D}\Four{\P\D\n\D}[\lagu] \\
+&\four{\P\D\m\P}\Four{\G\s{m-}\R\G}[\dhru]\four{\R\S\s{,}\R}\Four{\G\m\P\s{,}}[\lagu] \\
+\\
+&\four{\P\m\G\m}\four{\R\s{,-}\D\P}\four{\m\G\m\R}\Four{\s{,-}\G\m\P}[\lagu] \\
+&\four{\nl\S\s{,}\R}\Four{\G\m\P\m}[\dhru]\four{\D\s{,}\n\Su}\Four{\Ru\s{,}\Ru\s{,}}[\lagu] \\
+\\
+&\four{\Gu\mu\Ru\Gu}\four{\Ru\s{\.{S}-}\n\Ru}\four{\s{\.{S}-}\n\Su\D}\Four{\P\s{m-}\D\n}[\lagu] \\
+&\four{\Su\Su\s{,-}\P}\Four{\P\s{,-}\R\R}[\dhru]\four{\s{,-}\nl\S\R}\Four{\G\m\P\m}[\lagu] \\
+&(\emph{k\d{r}pa})\\
+\\
+\end{tabular}
+
+\subsection*{References}
+\begin{enumerate}
+\item Smt. Rajeswari Padmanabhan's \emph{v\=\i\d{n}\=a} rendition in ``Surabhi'' (primary)
+\item Shivkumar Kalyanaraman's notation \\{\small\verb|http://www.ecse.rpi.edu/Homepages/shivkuma/personal/music/varnams/karunimpa-sahana-adi-varnam.pdf|}
+\item {\small\verb|http://www.karnatik.com/c3007.shtml|}
+\end{enumerate}
+\end{document}  
