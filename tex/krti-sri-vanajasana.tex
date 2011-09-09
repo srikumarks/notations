@@ -1,0 +1,134 @@
+% XeLaTeX can use any Mac OS X font. See the setromanfont command below.
+% Input to XeLaTeX is full Unicode, so Unicode characters can be typed directly into the source.
+
+% The next lines tell TeXShop to typeset with xelatex, and to open and save the source with Unicode encoding.
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[12pt]{article}
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{a4paper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}
+\usepackage{amssymb}
+
+% Will Robertson's fontspec.sty can be used to simplify font choices.
+% To experiment, open /Applications/Font Book to examine the fonts provided on Mac OS X,
+% and change "Hoefler Text" to any of these choices.
+
+\usepackage{fontspec,xltxtra,xunicode}
+\usepackage[pdftex,colorlinks=true,urlcolor=cyan]{hyperref}
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont[Mapping=tex-text]{Times}
+\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Gill Sans}
+\setmonofont[Scale=MatchLowercase]{Andale Mono}
+\def \deva#1{{\fontspec{DevanagariMT}#1}}
+%\newcommand\tamil{\fontspec[Script=Tamil]{InaiMathi}}
+\newfontfamily{\tamil}[Script=Tamil]{InaiMathi}
+
+% info{raga}{arohana}{avarohana}{tala}
+\def \info#1#2#3#4{%
+	\begin{tabular}{ll}
+	\textbf{R\=ag\=a}: & #1 \\
+	\textbf{\=Ar\=oha\d na}: & #2 \\
+	\textbf{Avar\=oha\d na}: & #3 \\\\
+	\textbf{T\=a\d l\=a}: & #4
+	\end{tabular}
+	}
+
+\def \speed{0.3in}
+\def \f#1{\makebox[0.075in][l]{#1}}
+\def \t#1{\makebox[0.15in][l]{#1}}
+\def \s#1{\makebox[\speed][l]{#1}}
+
+\def \four#1{#1\s{}}
+\def \Four#1[#2]{#1#2}
+\def \thr#1{#1\s{}}
+\def \Sl {\s{\d{S}}}
+\def \rl {\s{\d{r}}}
+\def \Rl {\s{\d{R}}}
+\def \gl {\s{\d{g}}}
+\def \Gl {\s{\d{G}}}
+\def \ml {\s{\d{m}}}
+\def \Ml {\s{\d{M}}}
+\def \Pl {\s{\d{P}}}
+\def \dal {\s{\d{d}}}
+\def \Dl {\s{\d{D}}}
+\def \nl {\s{\d{n}}}
+\def \Nl {\s{\d{N}}}
+\def \S {\s{S}}
+\def \r {\s{r}}
+\def \R {\s{R}}
+\def \g {\s{g}}
+\def \G {\s{G}}
+\def \m {\s{m}}
+\def \M {\s{M}}
+\def \P {\s{P}}
+\def \da {\s{d}}
+\def \D {\s{D}}
+\def \n {\s{n}}
+\def \N {\s{N}}
+\def \Su {\s{\.S}}
+\def \ru {\s{\.r}}
+\def \Ru {\s{\.R}}
+\def \gu {\s{\.g}}
+\def \Gu {\s{\.G}}
+\def \mu {\s{\.m}}
+\def \Mu {\s{\.M}}
+\def \Pu {\s{\.P}}
+\def \dau {\s{\.d}}
+\def \Du {\s{\.D}}
+\def \nu {\s{\.n}}
+\def \Nu {\s{\.N}}
+\def \p {\s{,}}
+\def \w {\s{}}
+
+\def \lagu {\s{$||$}}
+\def \dhru {\s{$|$}}
+
+\def \kutti#1{\scriptsize #1}
+\def \netref#1{{\scriptsize {\tt #1} (\href{#1}{go there})}}
+
+\title{K\d rti : ``vanaj\=asana''}
+\author{Subbar\=aya \'S\=astri}
+%\date{}                                           % Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+
+\info{\'sr\=i}{S R$_{2}$ M$_{1}$ P N$_{2}$ \.S}{\.S N$_{2}$ P D$_{2}$ N$_{2}$ P M$_{1}$ R$_{2}$ G$_{2}$ R$_{2}$ S}{\=adi}
+
+\vspace{0.25 in}
+
+%P: vanajAsana vinuta nata varadAyaki shrI lalita A: kanakAdri nivAsini nanu kaTAkSincumu kAmAkSi (svara sAhityam) tAmasamikanu salupa tagAdu vinumu kAmita phalamu losaguTaku samayamu purAri ripuniki varamulu birAna nosagitivi yanucu vini nE nI padamula goliciti C1: kalAbharaNa kalAdhari sakalAgama sannuta amba kaluSArti bhaya vibhanjani ilalOpala nI valanE galadA shrI lalitAmbilkE 2: parAku salupa rAdikanu parA vinu ninnuvinA parulevvaru nannu brOcuTaku karudA karuNAkari shrIkari ninnE nera nammiti 3: sadA dalacina dAsulakunu dAsuDa shankari madanAri sati kumAruni muda sampada kAspadamai nadiga nI pada padmamu
+
+\begin{tabular}{l}
+\textbf{Pallavi:}\\
+\emph{vanaj\=asana vinut\=a nata varad\=ayaki \'sr\=i lalit\'e}\\
+\\
+\textbf{Anupallavi:}\\
+\emph{kanak\=adri niv\=asini nanu ka\d{t}\=ak\'sincumu k\=am\=ak\'si}\\
+(svara s\=ahityam)\\
+\emph{t\=amasamikanu salupa tag\=adu vinumu}\\
+\emph{k\=amita phalamu losagu\d{t}aku samayamu}\\
+\emph{pur\=ari ripuniki varamulu bir\=ana nosagitivi}\\
+\emph{yanucu vini n\'e n\=i padamula goliciti}\\
+\\
+\textbf{Caranam:}\\
+1) \emph{kal\=abhara\d{n}a kal\=adhari sakal\=agama sannuta}\\
+\emph{amba kalu\'s\=arti bhaya vibhanjani ilal\=opala}\\
+\emph{n\=i valan\'e galad\=a shr\=i lalit\=ambilk\'e}\\
+\\
+2) \emph{par\=aku salupa r\=adikanu par\=a vinu ninnuvin\=a}\\
+\emph{parulevvaru nannu br\=ocu\d{t}aku karud\=a}\\
+\emph{karu\d{n}\=akari shr\=ikari ninn\'e nera nammiti}\\
+\\
+3) \emph{sad\=a dalacina d\=asulakunu d\=asu\d{d}a}\\
+\emph{\'sankari madan\=ari sati kum\=aruni muda sampada}\\
+\emph{k\=aspadamai nadiga n\=i pada padmamu}\\
+\end{tabular}
+
+%\subsection
+\end{document}  
