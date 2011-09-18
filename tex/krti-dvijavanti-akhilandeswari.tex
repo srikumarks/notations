@@ -1,0 +1,146 @@
+% XeLaTeX can use any Mac OS X font. See the setromanfont command below.
+% Input to XeLaTeX is full Unicode, so Unicode characters can be typed directly into the source.
+
+% The next lines tell TeXShop to typeset with xelatex, and to open and save the source with Unicode encoding.
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[12pt]{article}
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{a4paper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}
+\usepackage{amssymb}
+
+% Will Robertson's fontspec.sty can be used to simplify font choices.
+% To experiment, open /Applications/Font Book to examine the fonts provided on Mac OS X,
+% and change "Hoefler Text" to any of these choices.
+
+\usepackage{fontspec,xltxtra,xunicode}
+\usepackage[pdftex,colorlinks=true,urlcolor=cyan]{hyperref}
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont[Mapping=tex-text]{Times}
+\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Gill Sans}
+\setmonofont[Scale=MatchLowercase]{Andale Mono}
+\def \deva#1{{\fontspec{DevanagariMT}#1}}
+%\newcommand\tamil{\fontspec[Script=Tamil]{InaiMathi}}
+\newfontfamily{\tamil}[Script=Tamil]{InaiMathi}
+
+% info{raga}{arohana}{avarohana}{tala}
+\def \info#1#2#3#4{%
+	\begin{tabular}{ll}
+	\textbf{R\=ag\=a}: & #1 \\
+	\textbf{\=Ar\=oha\d na}: & #2 \\
+	\textbf{Avar\=oha\d na}: & #3 \\\\
+	\textbf{T\=a\d l\=a}: & #4
+	\end{tabular}
+	}
+
+\def \speed{0.3in}
+\def \f#1{\makebox[0.075in][l]{#1}}
+\def \t#1{\makebox[0.15in][l]{#1}}
+\def \s#1{\makebox[\speed][l]{#1}}
+
+\def \four#1{#1\s{}}
+\def \Four#1[#2]{#1#2}
+\def \thr#1{#1\s{}}
+\def \Sl {\s{\d{S}}}
+\def \rl {\s{\d{r}}}
+\def \Rl {\s{\d{R}}}
+\def \gl {\s{\d{g}}}
+\def \Gl {\s{\d{G}}}
+\def \ml {\s{\d{m}}}
+\def \Ml {\s{\d{M}}}
+\def \Pl {\s{\d{P}}}
+\def \dal {\s{\d{d}}}
+\def \Dl {\s{\d{D}}}
+\def \nl {\s{\d{n}}}
+\def \Nl {\s{\d{N}}}
+\def \S {\s{S}}
+\def \r {\s{r}}
+\def \R {\s{R}}
+\def \g {\s{g}}
+\def \G {\s{G}}
+\def \m {\s{m}}
+\def \M {\s{M}}
+\def \P {\s{P}}
+\def \da {\s{d}}
+\def \D {\s{D}}
+\def \n {\s{n}}
+\def \N {\s{N}}
+\def \Su {\s{\.S}}
+\def \ru {\s{\.r}}
+\def \Ru {\s{\.R}}
+\def \gu {\s{\.g}}
+\def \Gu {\s{\.G}}
+\def \mu {\s{\.m}}
+\def \Mu {\s{\.M}}
+\def \Pu {\s{\.P}}
+\def \dau {\s{\.d}}
+\def \Du {\s{\.D}}
+\def \nu {\s{\.n}}
+\def \Nu {\s{\.N}}
+\def \p {\s{,}}
+\def \w {\s{}}
+
+\def \lagu {\s{$||$}}
+\def \dhru {\s{$|$}}
+
+\def \kutti#1{\scriptsize #1}
+\def \netref#1{{\scriptsize {\tt #1} (\href{#1}{go there})}}
+
+\title{K\d rti : ``akhil\=a\d{n}\d{d}\'e\'svari''}
+\author{Muttusv\=ami D\=ik\'sitar}
+%\date{}                                           % Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+
+\info{dvij\=avanti}{S R$_{2}$ M$_{1}$ G$_{3}$ M$_{1}$ P D$_{2}$ \.S}{\.S N$_{2}$ D$_{2}$ P M$_{1}$ R$_{2}$ G$_{2}$ R$_{2}$ S N$_{2}$ D$_{2}$ N$_{2}$ S}{\=adi}
+
+\vspace{0.25 in}
+
+%pallavi
+%
+%akhilANDEshvari rakSamAm Agama sampradAya nipuNE shrI
+%
+%anupallavi
+%
+%nikhila lOka nityAtmikE vimalE nirmalE shyAmaLE sakala kalE
+%
+%caraNam
+%
+%lambOdara guruguha pUjitE lambAlakOdbhAsitEhasitE
+%vAgdEvatArAdhitE varadE varashailarAjanutE shAradE
+%jambhAri sambhAvitE janArddananutE jujAvanti rAganutE jallI
+%maddaLa jhar jhara vAdya nAdamuditE jHnAnapradE
+
+
+\begin{tabular}{l}
+\textbf{Pallavi:}\\
+\emph{akhil\=a\d{n}\d{d}\'e\'svari rak\'sam\=am \=agama samprad\=aya nipu\d{n}\'e \'sr\=i}\\
+\deva{अखिलाण्डेश्वरि रक्षमां अागम संप्रदाय निपुणे श्री}\\
+\\
+\textbf{Anupallavi:}\\
+\emph{nikhila l\=oka nity\=atmik\'e vimal\'e nirmal\'e \'sy\=ama\d{l}\'e sakala kal\'e} \\
+\deva{निखिल लोक नित्यात्मिके विमले निर्मले श्यामले सकल कले}\\
+\\
+\textbf{Caranam:}\\
+\emph{lamb\=odara guruguha p\=ujit\'e lamb\=alak\=odbh\=asit\'e hasit\'e}\\
+\deva{लंबोदर गुरुगुह पूजिते लंबालकोद्भासिते हसिते}\\
+\\
+\emph{v\=agd\'evat\=ar\=adhit\'e varad\'e vara\'sailar\=ajanut\'e \'s\=arad\'e}\\
+\deva{वाग्देवताराधिते वरदे वरसैलराजनुते शारदे}\\
+\\
+\emph{jambh\=ari sambh\=avit\'e jan\=arddananut\'e juj\=avanti r\=aganut\'e jall\=i}\\
+\deva{जंभारि संभाविते जनार्धननुते जुजावन्ति रागनुते जल्लि}\\
+\\
+\emph{madda\d{l}a jhar jhara v\=adya n\=adamudit\'e jHn\=anaprad\'e}\\
+\deva{मद्दल झर्झर वाद्य नादमुदिते ञानप्रदे}
+
+\end{tabular}
+
+%\subsection
+\end{document}  
