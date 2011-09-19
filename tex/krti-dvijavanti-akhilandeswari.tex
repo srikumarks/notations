@@ -42,7 +42,9 @@
 \def \f#1{\makebox[0.075in][l]{#1}}
 \def \t#1{\makebox[0.15in][l]{#1}}
 \def \s#1{\makebox[\speed][l]{#1}}
+\def \dblspd#1{{\def \speed{0.15in}{\scriptsize #1}}}
 
+\def \eight#1{\dblspd{#1}\s{}}
 \def \four#1{#1\s{}}
 \def \Four#1[#2]{#1#2}
 \def \thr#1{#1\s{}}
@@ -87,6 +89,7 @@
 
 \def \lagu {\s{$||$}}
 \def \dhru {\s{$|$}}
+
 
 \def \kutti#1{\scriptsize #1}
 \def \netref#1{{\scriptsize {\tt #1} (\href{#1}{go there})}}
@@ -146,7 +149,8 @@
 \subsection*{Pallavi}
 
 \begin{tabular}{l}
-\four{\P\p\m\p}\four{\G\p\m\p}\four{\R\p\G\p}\Four{\R\p\S\p}[\dhru]\\
+\eight{\R\p\G\p\m\P\D\n}\eight{\D\P\m\G\P\m\G\m}\four{\w\w\w\w}\four{\w\w\w\w}\\
+\four{\P\p\m\p}\four{\G\p\m\p}\four{\R\p\g\p}\Four{\R\p\S\p}[\dhru]\\
 \textit{\four{\s{a}\w\s{khi}\w}\four{\s{l\=a}\w\w\w}\four{\s{\d{n}\d{d}\'e}\w\w\w}\four{\s{\'sva}\w\s{ri}\w}}\\
 \\
 \four{\p\p\nl\p}\Four{\Dl\p\P\p}[\dhru]\four{\R\p\p\p}\Four{\G\p\S\p}[\lagu]\\
@@ -163,14 +167,14 @@
 \subsection*{Anupallavi}
 
 \begin{tabular}{l}
-\four{\D\p\P\p}\four{\m\p\R\p}\four{\p\p\G\p}\Four{\S\p\p\p}[\dhru]\\
+\four{\D\p\P\p}\four{\m\p\R\p}\four{\p\p\g\p}\Four{\S\p\p\p}[\dhru]\\
 \textit{\four{\s{ni}\w\s{khi}\w}\four{\s{la}\w\s{l\=o}\w}\four{\w\w\s{ka}\w}\four{\s{ni}\w\w\w}}\\
 \\
-\four{\nl\p\Dl\P}\Four{\R\p\R\p}[\dhru]\four{\P\p\m\p}\Four{\P\p\p\p}[\lagu]\\
+\four{\S\nl\Dl\Pl}\Four{\R\p\R\p}[\dhru]\four{\P\p\m\p}\Four{\P\p\p\p}[\lagu]\\
 \textit{\four{\s{ty\=a}\w\w\w}\four{\s{tmi}\w\s{k\'e}\w}\four{\s{vi}\w\s{ma}\w}\four{\s{l\'e}\w\w\w}}\\
 \\
 
-\four{\S\p\p\n}\four{\D\P\Ru\p}\four{\p\p\Ru\p}\Four{\Gu\p\Ru\p}[\dhru]\\
+\four{\S\p\p\n}\four{\D\P\Ru\p}\four{\p\p\Ru\p}\Four{\gu\p\Ru\p}[\dhru]\\
 \textit{\four{\s{ni}\w\w\w}\four{\s{rma}\w\s{l\'e}\w}\four{\w\w\s{\'sy\=a}\w}\four{\w\w\s{ma}\w}}\\
 \\
 \four{\Su\p\p\p}\Four{\D\p\P\p}[\dhru]\four{\m\p\R\p}\Four{\G\p\S\p}[\lagu]\\
@@ -186,21 +190,21 @@
 \four{\P\p\p\p}\four{\m\p\p\p}\four{\G\p\G\p}\Four{\R\p\R\p}[\dhru]\\
 \textit{\four{\s{lam}\w\w\w}\four{\s{b\=o}\w\w\w}\four{\s{da}\w\s{ra}\w}\four{\s{gu}\w\s{ru}\w}}\\
 \\
-\four{\G\p\R\p}\Four{\S\p\p\p}[\dhru]\four{\S\nl\Dl\Pl}\Four{\R\p\p\p}[\lagu]\\
+\four{\g\p\R\p}\Four{\S\p\p\p}[\dhru]\four{\S\nl\Dl\Pl}\Four{\R\p\p\p}[\lagu]\\
 \textit{\four{\s{gu}\w\s{ha}\w}\four{\s{p\=u}\w\w\w}\four{\w\w\s{ji}\w}\four{\s{t\'e}\w\w\w}}\\
 \\
 
 \four{\R\p\p\p}\four{\R\p\G\p}\four{\m\p\P\p}\Four{\m\p\P\p}[\dhru]\\
 \textit{\four{\s{lam}\w\w\w}\four{\s{b\=a}\w\w\w}\four{\s{la}\w\s{k\=o}\w}\four{\w\w\s{dbh\=a}\w}}\\
 \\
-\four{\p\p\D\p}\Four{\P\p\p\p}[\dhru]\four{\Su\n\D\p}\Four{\P\p\p\p}[\lagu]\\
+\four{\p\p\D\p}\Four{\P\p\p\p}[\dhru]\four{\D\n\m\p}\Four{\P\p\p\p}[\lagu]\\
 \textit{\four{\w\w\s{si}\w}\four{\s{t\'e}\w\w\w}\four{\s{ha}\w\s{si}\w}\four{\s{t\'e}\w\w\w}}\\
 \\
 
 \four{\P\p\p\p}\four{\Su\p\p\p}\four{\Su\p\Su\p}\Four{\p\p\Su\n}[\dhru]\\
 \textit{\four{\s{v\=a}\w\w\w}\four{\s{gd\'e}\w\w\w}\four{\s{va}\w\s{t\=a}\w}\four{\w\w\s{r\=a}\w}}\\
 \\
-\four{\D\P\P\p}\Four{\Ru\p\p\p}[\dhru]\four{\Gu\p\Ru\p}\Four{\Su\p\p\p}[\lagu]\\
+\four{\D\P\P\p}\Four{\Ru\p\p\p}[\dhru]\four{\gu\p\Ru\p}\Four{\Su\p\p\p}[\lagu]\\
 \textit{\four{\w\w\s{dhi}\w}\four{\s{t\'e}\w\w\w}\four{\s{va}\w\s{ra}\w}\four{\s{d\'e}\w\w\w}}\\
 \\
 
@@ -216,7 +220,7 @@
 \subsubsection*{Madhyamak\=ala s\=ahityam}
 
 \begin{tabular}{l}
-\four{\P\p\R\G}\four{\R\S\p\nl}\four{\Dl\Pl\R\p}\Four{\R\G\m\P}[\dhru]\\
+\four{\P\p\R\g}\four{\R\S\p\nl}\four{\Dl\Pl\R\p}\Four{\R\G\m\P}[\dhru]\\
 \textit{\four{\s{jam}\w\s{bh\=a}\w}\four{\s{ri}\s{sam}\w\s{bh\=a}}\four{\w\s{vi}\s{t\'e}\w}\four{\s{ja}\s{n\=a}\w\s{rdha}}}\\
 \\
 \four{\m\D\P\p}\Four{\Su\Su\p\n}[\dhru]\four{\D\P\Su\p}\Four{\n\Ru\Su\p}[\lagu]\\
@@ -226,7 +230,7 @@
 \four{\D\p\P\p}\four{\Ru\p\Ru\Ru}\four{\Ru\Gu\mu\Pu}\Four{\mu\Gu\mu\mu}[\dhru]\\
 \textit{\four{\s{jal}\w\s{li}\w}\four{\s{mad}\w\s{da}\s{\d{l}a}}\four{\s{jha}\w\s{rjha}\s{ra}}\four{\s{v\=a}\w\w\s{dhya}}}\\
 \\
-\four{\Ru\p\Gu\Ru}\Four{\Su\n\Su\p}[\dhru]\four{\D\P\P\m}\Four{\R\G\S\p}[\lagu]\\
+\four{\Ru\p\gu\Ru}\Four{\Su\n\Su\p}[\dhru]\four{\D\P\P\m}\Four{\R\G\S\p}[\lagu]\\
 \textit{\four{\s{n\=a}\w\w\s{da}}\four{\s{mu}\s{di}\s{t\'e}\w}\four{\s{gna}\w\s{na}\w}\four{\s{pra}\s{d\'e}\w\w}}\\
 \\
 
