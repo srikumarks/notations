@@ -1,0 +1,88 @@
+\documentclass[12pt]{article}
+\usepackage[hmargin=1in,vmargin=0.75in]{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{a4paper}                   % ... or a4paper or a5paper or ... 
+\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}
+\usepackage{amssymb}
+
+% Will Robertson's fontspec.sty can be used to simplify font choices.
+% To experiment, open /Applications/Font Book to examine the fonts provided on Mac OS X,
+% and change "Hoefler Text" to any of these choices.
+
+\usepackage{fontspec,xltxtra,xunicode}
+\usepackage[pdftex,colorlinks=true,urlcolor=cyan]{hyperref}
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont[Mapping=tex-text]{Times}
+\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Gill Sans}
+\setmonofont[Scale=MatchLowercase]{Andale Mono}
+\def \deva#1{{\fontspec{DevanagariMT}#1}}
+%\newcommand\tamil{\fontspec[Script=Tamil]{InaiMathi}}
+\newfontfamily{\tamil}[Script=Tamil]{InaiMathi}
+
+% info{raga}{arohana}{avarohana}{tala}
+\def \info#1#2#3#4{%
+	\begin{tabular}{rlrl}
+	\textbf{R\=ag\=a}: & #1
+	& \textbf{\=Ar\=oha\d na}: & #2 \\
+	\textbf{T\=a\d l\=a}: & #4
+	& \textbf{Avar\=oha\d na}: & #3 \\
+	\end{tabular}
+	}
+
+\def \speed{0.3in}
+\def \f#1{\makebox[0.075in][l]{#1}}
+\def \t#1{\makebox[0.15in][l]{#1}}
+\def \s#1{\makebox[\speed][l]{#1}}
+\def \dblspd#1{{\def \speed{0.15in}{\scriptsize #1}}}
+
+\def \eight#1{\dblspd{#1}\s{}}
+\def \four#1{#1\s{}}
+\def \Four#1[#2]{#1#2}
+\def \thr#1{#1\s{}}
+\def \Sl {\s{S{\kern-0.5em}\textbf{\d{}}}}
+\def \rl {\s{r{\kern-0.5em}\textbf{\d{}}}}
+\def \Rl {\s{R{\kern-0.5em}\textbf{\d{}}}}
+\def \gl {\s{g{\kern-0.5em}\textbf{\d{}}}}
+\def \Gl {\s{G{\kern-0.5em}\textbf{\d{}}}}
+\def \ml {\s{m{\kern-0.5em}\textbf{\d{}}}}
+\def \Ml {\s{M{\kern-0.6em}\textbf{\d{}}}}
+\def \Pl {\s{P{\kern-0.35em}\textbf{\d{}}}}
+\def \dal {\s{d{\kern-0.35em}\textbf{\d{}}}}
+\def \Dl {\s{D{\kern-0.5em}\textbf{\d{}}}}
+\def \nl {\s{n{\kern-0.35em}\textbf{\d{}}}}
+\def \Nl {\s{N{\kern-0.5em}\textbf{\d{}}}}
+\def \S {\s{S}}
+\def \r {\s{r}}
+\def \R {\s{R}}
+\def \g {\s{g}}
+\def \G {\s{G}}
+\def \m {\s{m}}
+\def \M {\s{M}}
+\def \P {\s{P}}
+\def \da {\s{d}}
+\def \D {\s{D}}
+\def \n {\s{n}}
+\def \N {\s{N}}
+\def \Su {\s{\.S}}
+\def \ru {\s{\.r}}
+\def \Ru {\s{\.R}}
+\def \gu {\s{\.g}}
+\def \Gu {\s{\.G}}
+\def \mu {\s{\.m}}
+\def \Mu {\s{\.M}}
+\def \Pu {\s{\.P}}
+\def \dau {\s{\.d}}
+\def \Du {\s{\.D}}
+\def \nu {\s{\.n}}
+\def \Nu {\s{\.N}}
+\def \p {\s{,}}
+\def \w {\s{}}
+
+\def \lagu {\s{$||$}}
+\def \dhru {\s{$|$}}
+
+
+\def \kutti#1{\scriptsize #1}
+\def \lyrics#1{\small{\textit{#1}}}
+\def \netref#1{{\scriptsize {\tt #1} (\href{#1}{go there})}}
